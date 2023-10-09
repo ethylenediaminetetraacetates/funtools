@@ -4,25 +4,6 @@ body{
     background-color: #242424;
     margin: 0%;
     overflow-x: hidden;
-
-    animation-delay: 0ms;
-    animation-play-state: running;
-    animation-name: bganim;
-    animation-duration: 1000ms;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-}
-
-@keyframes bganim{
-    0%{
-        background-color: #242424;
-    }
-    50%{
-        background-color: #000000;
-    }
-    100%{
-        background-color: #242424;
-    }
 }
 
 @keyframes pop{
@@ -53,13 +34,41 @@ body{
     }
 }
 
+@keyframes medpop{
+    0%{
+        color: transparent;
+        text-align: center;
+        font-size: 2vmin;
+        font-family: "Varela Round", sans-serif;
+
+        margin-top: 0vmin;
+    }
+    50%{
+        color: transparent;
+        text-align: center;
+        font-size: 2vmin;
+        font-family: "Varela Round", sans-serif;
+
+        margin-top: 0vmin;
+    }
+    100%{
+        color: #f0f0f0;
+        text-align: center;
+        font-size: 4vmin;
+        font-family: "Varela Round", sans-serif;
+
+        transform:rotate(5deg);
+        margin-top: 5vmin;
+    }
+}
+
 @keyframes minirotation{
     0%{
-        transform:rotate(5deg);
+        transform:rotate(2deg);
         animation-timing-function: ease-in-out;
     }
     100%{
-        transform:rotate(-5deg);
+        transform:rotate(-2deg);
         animation-timing-function: ease-in-out;
     }
 }
@@ -68,19 +77,56 @@ h1{
     color: #f0f0f0;
 }
 
-.big{
+
+.bigregular{
     animation-delay: 0ms,0ms;
     animation-play-state: running,running;
     animation-name: pop,minirotation;
     animation-duration: 1000ms,500ms;
     animation-iteration-count: 1,infinite;
-    animation-direction: reverse,alternate;
+    animation-direction: normal,alternate;
 
     margin-top: 10vmin;
 
     color: #f0f0f0;
     text-align: center;
     font-size: 5vmin;
+    font-family: "Varela Round", sans-serif;
+    
+    transition-duration: 100ms;
+}
+
+.medregular{
+    animation-delay: 0ms,0ms;
+    animation-play-state: running,running;
+    animation-name: medpop,minirotation;
+    animation-duration: 1000ms,500ms;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+
+    margin-top: 5vmin;
+
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 4vmin;
+    font-family: "Varela Round", sans-serif;
+    
+    transition-duration: 100ms;
+}
+
+.medlink{
+    animation-delay: 0ms,0ms;
+    animation-play-state: running,running;
+    animation-name: medpop,minirotation;
+    animation-duration: 1000ms,500ms;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+
+    margin-top: 5vmin;
+
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 4vmin;
     font-family: "Varela Round", sans-serif;
     
     transition-duration: 100ms;
