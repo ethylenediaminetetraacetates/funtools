@@ -1,2 +1,2 @@
-# fun_redirects
-fun redirects between my domains
+# fun tools
+random little tools i make
