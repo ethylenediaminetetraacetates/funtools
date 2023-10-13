@@ -1,3 +1,3 @@
 setTimeout(function(){
-    document.location = "https://ethyl.xyz.wf";
+    document.location = "https://ethylenediaminetetraacetates.github.io/";
 },1000)

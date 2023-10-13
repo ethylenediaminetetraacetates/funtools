@@ -53,6 +53,13 @@ body{
     }
 }
 
+.error{
+    color: #c22d00;
+    text-align: center;
+    font-size: 2vmin;
+    font-family: "Varela Round", sans-serif;
+}
+
 @keyframes minirotation{
     0%{
         transform:rotate(5deg);
