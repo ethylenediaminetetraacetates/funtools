@@ -45,9 +45,10 @@ setTimeout(function(){
 },1000)
 
 function redirection(){
-    setInterval(function(){
+    let q = setInterval(function(){
         countdown = countdown - 1;
         document.querySelector("#loadingthingy").innerText = new URLSearchParams(document.location.search).get("site") + " in " + countdown;
+        if(countdown == 0){clearInterval(q);loadingisfun(0);countdown = 0;}
     },50)
     setTimeout(function(){
         document.location = new URLSearchParams(document.location.search).get("site")
