@@ -32,6 +32,8 @@ function loadingisfun(i){
 
 loadingisfun(0);
 
+function runtimeout(){
+
 setTimeout(function(){
     if(new URLSearchParams(document.location.search).get("site") == ""){
 
@@ -43,12 +45,14 @@ setTimeout(function(){
         },100)
     }
 },1000)
+}
+
 
 function redirection(){
     let q = setInterval(function(){
         countdown = countdown - 1;
         document.querySelector("#loadingthingy").innerText = new URLSearchParams(document.location.search).get("site") + " in " + countdown;
-        if(countdown == 1){countdown = 10;ready = false;clearInterval(q);loadingisfun(0);}
+        if(countdown == 1){countdown = 10;ready = false;clearInterval(q);loadingisfun(0);runtimeout();}
     },50)
     setTimeout(function(){
         document.location = new URLSearchParams(document.location.search).get("site")
